@@ -1,6 +1,9 @@
 <h2>Ejemplo de MEAN</h2>
 Para instalar el entorno
 <ul>
+<li>instalar ruby</li>
+<li>gem update --system</li>
+<li>gem install compass</li>
 <li>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</li>
 <li>brew install node</li>
 <li>brew install mongodb</li>
@@ -43,5 +46,8 @@ Dentro de la carpeta server:
   }
 }
 </pre>
-<li>correr: npm install</li>
+<li>correr: npm install tanto en la carpeta server como en la client</li>
+<li>si se queja el bower, correr: bower install</li>
 </ul>
+
+
