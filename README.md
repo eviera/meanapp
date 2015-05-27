@@ -46,8 +46,17 @@ Dentro de la carpeta server:
   }
 }
 </pre>
+</ul>
+
+<br>
+Otras cosas:
+<ul>
 <li>correr: npm install tanto en la carpeta server como en la client</li>
 <li>si se queja el bower, correr: bower install</li>
+<li>si yeoman no genera las rutas, correr: npm install -g generator-angular</li>
+<li>Para correr el server: node index.js</li>
+<li>Para correr el cliente: grunt serve</li>
+<li></li>
 </ul>
 
 
