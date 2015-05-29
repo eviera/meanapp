@@ -10,13 +10,9 @@
  */
 angular
   .module('clientApp', [
-    'ngRoute',
-    'restangular'
+    'ngRoute'
   ])
-  .config(function ($routeProvider, RestangularProvider) {
-  
-    RestangularProvider.setBaseUrl('http://localhost:3000');
-
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -26,20 +22,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/movies', {
-        templateUrl: 'views/movies.html',
-        controller: 'MoviesCtrl'
-      })
       .otherwise({
         redirectTo: '/'
       });
-  }).factory('MovieRestangular', function(Restangular) {
-      return Restangular.withConfig(function(RestangularConfigurer) {
-        RestangularConfigurer.setRestangularFields({
-        id: '_id'
-      });
-    });
-  }).factory('Movie', function(MovieRestangular) {
-      return MovieRestangular.service('movie'); //apunta a la url /movie
   });
-
