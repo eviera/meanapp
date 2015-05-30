@@ -56,7 +56,14 @@ Otras cosas:
 <li>si yeoman no genera las rutas, correr: npm install -g generator-angular</li>
 <li>Para correr el server: node index.js</li>
 <li>Para correr el cliente: grunt serve</li>
-<li></li>
+<li>si el algun paquete de bower no modifica el index.hmtl para agregarse, usar: grunt wiredep (esto paso al instalar el restangular</li>
 </ul>
 
-
+<h2> Para correr el proyecto </h2>
+<ul>
+<li>lanzar el MongoDB: mongod</li>
+<li>en server: node index.js</li>
+<li>en client: grunt serve</li>
+<li>para usar la interfaz REST desde el chrome, usar la extension Postman - REST client shortcut</li>
+<li>para que se vea bonito el JSON en chrome, usar la extension JSONView</li>
+</ul>
